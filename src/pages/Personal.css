@@ -1,0 +1,192 @@
+.tab-bar {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.6rem 1.25rem;
+  border: 2px solid var(--color-gray-200);
+  border-radius: 9999px;
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: var(--color-text-muted);
+}
+
+.tab-btn:hover {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.tab-btn--active {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+/* Book list */
+.book-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.book-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s;
+}
+
+.book-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.book-item__cover {
+  flex-shrink: 0;
+  width: 64px;
+  height: 90px;
+  border-radius: 6px;
+  background: var(--color-gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-item__info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.book-item__info .author {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.book-item__info p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Travel grid */
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.travel-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: var(--color-white);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.travel-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.travel-card__image {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-card__image--1 {
+  background: linear-gradient(135deg, #fce4f0, #e0f2fe);
+}
+.travel-card__image--2 {
+  background: linear-gradient(135deg, #ccfbf1, #fef3c7);
+}
+.travel-card__image--3 {
+  background: linear-gradient(135deg, #ede9fe, #fce4f0);
+}
+.travel-card__image--4 {
+  background: linear-gradient(135deg, #ccfbf1, #e0f2fe);
+}
+
+.travel-card__body {
+  padding: 1.25rem;
+}
+
+.travel-card__body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.travel-card__body p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Volunteering */
+.volunteer-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.volunteer-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--color-accent);
+  transition: box-shadow 0.2s;
+}
+
+.volunteer-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.volunteer-item__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteer-item__info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.volunteer-item__info .org {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.volunteer-item__info p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .travel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-item,
+  .volunteer-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

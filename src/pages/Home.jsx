@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PlaceholderSvg from '../components/PlaceholderSvg';
+import mePhoto from '../assets/me.jpg';
 import { getYearsOfExperience } from '../utils/experience';
 import './Home.css';
 
@@ -18,7 +18,7 @@ export default function Home() {
             <p>
               Software professional with {years} years of experience building scalable
               applications, leading engineering teams, and turning complex problems
-              into elegant solutions. Passionate about books, travel, and giving back
+              into elegant solutions. Passionate about books, travel, sewing, and giving back
               to the community.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
 
           <div className="hero__avatar">
-            <PlaceholderSvg variant="person" color="var(--color-primary)" />
+            <img src={mePhoto} alt="Monica Villanueva" />
           </div>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function Home() {
               <div className="highlight__label">Years of Experience</div>
             </div>
             <div>
-              <div className="highlight__number gradient-text">12</div>
+              <div className="highlight__number gradient-text">17</div>
               <div className="highlight__label">Countries Visited</div>
             </div>
             <div>
@@ -70,14 +70,18 @@ export default function Home() {
           <h2 className="section__title">About Me</h2>
           <p className="section__subtitle">
             I&apos;m a software professional who has spent nearly two decades crafting
-            web applications, mentoring developers, and staying curious about the
-            ever-evolving tech landscape. My expertise is rooted in Angular, but
-            I&apos;m currently diving deep into React and loving every bit of it.
+            web applications, mentoring peers, and staying curious about the ever-evolving tech landscape. 
+            My expertise is rooted in Angular, but I am highly flexible in the software space with my 
+            most recent experience being in Site Reliability Engineering and cloud architecture. 
+            I thrive on solving complex problems, optimizing systems, and leading teams to 
+            deliver high-quality software that makes a difference.
+            I'm always up for learning something new and doing whatever needs to get done.
+            I&apos;m currently diving deep into React and Backstage and loving every bit of it.
           </p>
-          <p style={{ color: 'var(--color-text-muted)' }}>
+          <p className="section__subtitle">
             Outside of work, you&apos;ll find me buried in a good book, planning my
-            next travel adventure, or volunteering with local organizations. I believe
-            that a well-rounded life fuels creativity and makes me a better engineer.
+            next travel adventure, sewing, or volunteering with local organizations. 
+            I believe that a well-rounded life fuels creativity and makes me a better engineer.
           </p>
         </div>
       </section>

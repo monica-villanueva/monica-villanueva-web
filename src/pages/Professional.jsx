@@ -6,26 +6,31 @@ const HISTORY = [
   {
     date: '2022 - 2026',
     title: 'Lead Site Reliability Engineer',
+    employer: 'Shell Recharge Solutions',
     text: 'Made the leap to the operations side of software development, focusing on site reliability engineering, observability engineering, incident response, automation, and cloud architecture. Managed high-stress situations and lead teams to resolve critical incidents while maintaining a focus on long-term reliability and scalability.'
   },
   {
     date: '2020 - 2022',
     title: 'Senior Software Engineer',
+    employer: 'Intelliguard',
     text: 'Applied my Angular expertise for a web application interface for an RFID-enabled medication inventory tracking system. The role evolved into a full-stack position where I was responsible for both front-end and back-end development, CI/CD upgrades, business requirements, and achieving deliverables on time.',
   },
   {
     date: '2016 - 2020',
     title: 'Tech Lead, Manager',
+    employer: 'Lightstream, a division of Truist Bank',
     text: 'Joined a team of high-performers and learned to take ownership of large projects and deliver high-quality solutions in a heavily regulated environment. I learned to balance technical leadership with people management, and I enjoyed mentoring junior developers and helping them grow in their careers.',
   },
   {
     date: '2010 - 2015',
     title: 'Senior Software Engineer',
+    employer: 'Mitchell, an Enlyte Company',
     text: 'Continued my journey as a .NET developer learning C#, WPF, and early web tools like Backbone.js, AngularJS, and native mobile app conversions. I discovered a love for building web apps and saw how quickly the web evolves. I also realized that software development is a collaborative effort. I enjoyed being part of a team that worked together to solve complex problems and deliver innovative solutions while maintaining the integrity of our codebase.',
   },
   {
     date: '2008 - 2010',
     title: 'Junior Software Engineer',
+    employer: 'Versacall Technologies',
     text: 'Started my career in a .NET shop building web reports for factory equipment that measured productivity. Gained hands-on experience with VB.NET, ASP.NET, and building client-facing applications that users relied on for important business decisions. I learned that my work had a direct impact on the success of our customers\'s business, and I took pride in delivering high-quality software that met the needs of our users.',
   },
 ];
@@ -70,12 +75,13 @@ const EDUCATION = [
 ];
 
 const INTERESTS = [
-  { title: 'Angular', text: 'Deep expertise in the Angular ecosystem.', variant: 'code', color: 'var(--color-primary)' },
-  { title: 'React', text: 'Currently learning React and its ecosystem.', variant: 'code', color: 'var(--color-accent)' },
-  { title: 'Cloud Architecture', text: 'Experience with AWS, Azure, and GCP.', variant: 'globe', color: 'var(--color-primary)' },
-  { title: 'DevOps', text: 'CI/CD pipelines, Docker, and Kubernetes.', variant: 'code', color: 'var(--color-accent)' },
-  { title: 'Agile', text: 'Scrum and Kanban methodologies.', variant: 'person', color: 'var(--color-primary)' },
-  { title: 'Open Source', text: 'Active contributor and maintainer.', variant: 'heart', color: 'var(--color-accent)' },
+  { title: 'Web Development', text: 'Deep expertise in the Angular ecosystem with skills transferrable to React.', variant: 'code', color: 'var(--color-primary)' },
+  { title: 'Full Stack Development', text: 'Seeing a whole project through from frontend to backend.', variant: 'papers', color: 'var(--color-accent)' },
+  { title: 'Site Reliability', text: 'Forward vision for maintaining highly available and performant systems.', variant: 'uptime', color: 'var(--color-primary)' },
+  { title: 'Observability', text: 'Skillful in using observability tools such as Dynatrace, Datadog, and CloudWatch to gain insights into system performance.', variant: 'goggles', color: 'var(--color-accent)' },
+  { title: 'Incident Management', text: 'Satisfaction in bringing order to chaos and turning crises into opportunities for improvement.', variant: 'alert', color: 'var(--color-primary)' },
+  { title: 'Cloud Architecture', text: 'Experience using AWS with skills transferrable to Azure and GCP.', variant: 'globe', color: 'var(--color-accent)' },
+  { title: 'DevOps Lite', text: 'Ensuring my code gets from desktop to production through CI/CD pipelines, ArgoCD, GitHub Workflows, Docker, and Kubernetes.', variant: 'cycle', color: 'var(--color-primary)' },
 ];
 
 export default function Professional() {
@@ -100,6 +106,7 @@ export default function Professional() {
                 <div className="timeline__dot" />
                 <div className="timeline__date">{item.date}</div>
                 <div className="timeline__title">{item.title}</div>
+                <div className="timeline__employer">{item.employer}</div>
                 <p className="timeline__text">{item.text}</p>
               </div>
             ))}

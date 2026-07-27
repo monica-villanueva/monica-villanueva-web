@@ -1,76 +1,179 @@
 import { useState } from 'react';
 import PlaceholderSvg from '../components/PlaceholderSvg';
+import CountryFlag from '../components/CountryFlag';
+import cambodiaFlagImage from '../assets/cambodia_flag.png';
+import canadaFlagImage from '../assets/canada_flag.png';
+import koreaFlagImage from '../assets/korea_flag.png';
+import mexicoFlagImage from '../assets/mexico_flag.png';
+import portugalFlagImage from '../assets/portugal_flag.png';
+import spainFlagImage from '../assets/spain_flag.png';
 import './Personal.css';
 
 const TABS = ['Books', 'Travel', 'Volunteering'];
 
 const BOOKS = [
   {
-    title: 'Clean Code',
-    author: 'Robert C. Martin',
-    text: 'A handbook of agile software craftsmanship that transformed how I think about writing readable, maintainable code.',
+    title: 'Amanda Knox: Waiting to be Heard',
+    author: 'Amanda Knox',
+    text: 'A memoir about an American college student being wrongfully accused and convicted of murder in Perugia, Italy while studying abroad.',
   },
   {
-    title: 'Designing Data-Intensive Applications',
-    author: 'Martin Kleppmann',
-    text: 'An in-depth look at the architecture behind reliable, scalable, and maintainable systems. A must-read for any backend or full-stack engineer.',
+    title: 'Becoming',
+    author: 'Michelle Obama',
+    text: 'A memoir chronicaling the life of the former First Lady of the United States, from her childhood to her time in the White House and beyond.',
   },
   {
-    title: 'The Pragmatic Programmer',
-    author: 'David Thomas & Andrew Hunt',
-    text: 'Timeless advice on becoming a better developer. I revisit this one every few years and always pick up something new.',
+    title: 'Deacon King Kong',
+    author: 'James McBride',
+    text: 'A humorous historical fiction novel set in 1969 Brooklyn that touches on issues of race, community, and redemption.',
   },
   {
-    title: 'Educated',
-    author: 'Tara Westover',
-    text: 'A powerful memoir about the transformative power of education. One of the most impactful non-fiction books I have ever read.',
+    title: 'I am Malala',
+    author: 'Malala Yousafzai',
+    text: 'A memoir about the young life of Malala Yousafzai, a Pakistani activist for female education who survived an assassination attempt by the Taliban and went on to become the youngest-ever Nobel Prize laureate.',
   },
   {
-    title: 'The Alchemist',
-    author: 'Paulo Coelho',
-    text: 'A beautifully simple story about following your dreams. It reminds me to stay curious and embrace the journey.',
+    title: 'Know My Name: A Memoir',
+    author: 'Chanel Miller',
+    text: 'A memoir about the experience of being a survivor of sexual assault and the journey toward healing and empowerment.',
+  },
+  {
+    title: 'Love Warrior',
+    author: 'Glennon Doyle',
+    text: 'A memoir about infidelity, betrayal, and redemption.',
+  },
+  {
+    title: 'Loving What Is',
+    author: 'Byron Katie',
+    text: 'A guide to finding peace and acceptance in the present moment through questioning our thoughts and beliefs.',
+  },
+  {
+    title: 'The Great Believers',
+    author: 'Rebecca Makkai',
+    text: 'A historical fiction novel, set in the 1980s, about the AIDS epidemic and its impact on a group of friends in Chicago.',
+  },
+  {
+    title: 'The House on Mango Street',
+    author: 'Sandra Cisneros',
+    text: 'A beautiful novel written in a unique style in the form of vignettes, written in a poetic and lyrical style, tells the story of a young Latina girl growing up in Chicago and her community.',
+  },
+  {
+    title: 'The Vanishing Half',
+    author: 'Brett Bennett',
+    text: 'A historical fiction novel that follows the lives of twin sisters who choose to live in different racial identities. The story explores themes of race, identity, and transformation.',
   },
 ];
 
 const TRAVEL = [
   {
-    destination: 'Rome, Italy',
-    text: 'Wandered through the Roman Forum and stood in awe at the Colosseum. The food was incredible, and every street corner felt like a history lesson.',
-    imageClass: 'travel-card__image--1',
-  },
-  {
-    destination: 'Kyoto, Japan',
-    text: 'Explored ancient temples and serene Zen gardens. The blend of tradition and modernity was unlike anything I had experienced before.',
+    destination: 'Cambodia',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
     imageClass: 'travel-card__image--2',
+    image: cambodiaFlagImage,
   },
   {
-    destination: 'Machu Picchu, Peru',
-    text: 'Hiked up the mountain to the Incan ruins at sunrise. The view from the top was absolutely breathtaking and worth every step.',
+    destination: 'Canada',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+    image: canadaFlagImage,
+  },
+  {
+    destination: 'China',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
     imageClass: 'travel-card__image--3',
   },
   {
-    destination: 'Reykjavik, Iceland',
-    text: 'Chased the Northern Lights and soaked in natural hot springs. A land of fire and ice that felt like another planet.',
+    destination: 'Czech Republic',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
     imageClass: 'travel-card__image--4',
+  },
+  {
+    destination: 'Denmark',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+  },
+  {
+    destination: 'England',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+  },
+  {
+    destination: 'France',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+  },
+  {
+    destination: 'Germany',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+  },
+  {
+    destination: 'Italy',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--1',
+  },
+  {
+    destination: 'Japan',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--2',
+  },
+  {
+    destination: 'Mexico',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+    image: mexicoFlagImage,
+  },
+  {
+    destination: 'Norway',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--3',
+  },
+  {
+    destination: 'Portugal',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--2',
+    image: portugalFlagImage,
+  },
+  {
+    destination: 'South Korea',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+    image: koreaFlagImage,
+  },
+  {
+    destination: 'Spain',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+    image: spainFlagImage,
+  },
+  {
+    destination: 'Sweden',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--4',
+  },
+  {
+    destination: 'Thailand',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--1',
+  },
+  {
+    destination: 'Vietnam',
+    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageClass: 'travel-card__image--3',
   },
 ];
 
 const VOLUNTEERING = [
   {
-    role: 'Coding Mentor',
-    org: 'Code for Everyone',
-    text: 'I teach young people the fundamentals of programming through weekly hands-on sessions. Watching beginners write their first working app is incredibly rewarding.',
+    role: 'Cat Adoption Center Volunteer',
+    org: 'Smittens Rescue',
+    text: 'I help care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I assist with adoptions which includes meeting potential adopters and processing adoption applications. When the adoption center coordinator is on leave, I fill in as a co-coordinator with managing the center.',
   },
   {
-    role: 'Event Organizer',
-    org: 'Civic Tech Alliance',
-    text: 'I organize hackathons and meetups for the local tech community, focusing on building solutions for social good and public benefit.',
-  },
-  {
-    role: 'Open Source Contributor',
-    org: 'Various Projects',
-    text: 'I contribute to open source projects, especially tools focused on accessibility and education, to help make technology more inclusive.',
-  },
+    role: 'River Cleanup Volunteer',
+    org: 'San Diego River Park Foundation',
+    text: 'I join the River Rescue team who work to clean up small, remote, and complicated trash sites from the San Diego River in order to ensure a healthy ecosystem.',
+  }
 ];
 
 export default function Personal() {
@@ -121,7 +224,8 @@ function BooksPanel() {
     <>
       <h2 className="section__title">Favorite Books</h2>
       <p className="section__subtitle">
-        Reading feeds my curiosity. Here are some books that have shaped my thinking the most.
+        Reading takes me on journeys beyond the tech world. 
+        There are too many to name them all, but here are some books that have shaped my thinking recently.
       </p>
       <div className="book-list">
         {BOOKS.map((book) => (
@@ -152,7 +256,15 @@ function TravelPanel() {
         {TRAVEL.map((place) => (
           <div className="travel-card" key={place.destination}>
             <div className={`travel-card__image ${place.imageClass}`}>
-              <PlaceholderSvg variant="globe" color="var(--color-accent)" />
+              {place.image ? (
+                <img
+                  src={place.image}
+                  alt={place.destination}
+                  className="travel-card__photo"
+                />
+              ) : (
+                <CountryFlag country={place.destination} />
+              )}
             </div>
             <div className="travel-card__body">
               <h3>{place.destination}</h3>
@@ -170,7 +282,7 @@ function VolunteeringPanel() {
     <>
       <h2 className="section__title">Volunteering</h2>
       <p className="section__subtitle">
-        Giving back is one of the most fulfilling parts of my life. Here are the causes I care about.
+        I love cats and care about the environment that surrounds my community. I volunteer with local organizations to help make a difference in the lives of animals and the health of our planet.
       </p>
       <div className="volunteer-list">
         {VOLUNTEERING.map((item) => (

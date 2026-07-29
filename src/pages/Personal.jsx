@@ -67,98 +67,98 @@ const BOOKS = [
 const TRAVEL = [
   {
     destination: 'Cambodia',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I learned a lot about its difficult history and the genocide under the Khmer Rouge regime, enjoyed cultural performances like Aspara dance and an acrobatic circus, and visited the ancient temple, Angkor Wat.',
     imageClass: 'travel-card__image--2',
     image: cambodiaFlagImage,
   },
   {
     destination: 'Canada',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I visited Vancouver in the rainy season which made it even more magical. Riding bikes around Stanley Park was my favorite memory.',
     imageClass: 'travel-card__image--4',
     image: canadaFlagImage,
   },
   {
     destination: 'China',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'The book \"Undress Me in the Temple of Heaven\" inspired me to explore this vast and culturally rich country. I visited Beijing, Xi\'an, Shanghai, Hangzhou, and Hong Kong.',
     imageClass: 'travel-card__image--3',
   },
   {
     destination: 'Czech Republic',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I made a stop in Prague on my first ever international trip backpacking around Europe. My favorite things were all things Kafka (the writer), learning about the history in the Jewish Quarter, and the public art installation, Babies, by the Czech sculptor David Cerny.',
     imageClass: 'travel-card__image--4',
   },
   {
     destination: 'Denmark',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I visited Copenhagen and loved the walking and biking culture, the beautiful design of everything, and the \"hygge\" philosophy.',
     imageClass: 'travel-card__image--4',
   },
   {
     destination: 'England',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I went to London on my first international trip and then returned years later for a road trip around the country.',
     imageClass: 'travel-card__image--4',
   },
   {
     destination: 'France',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I spent 10 days in Paris in the winter and learned that it\'s possible to spend too much time in one city. :) But forever grateful to have seen some of the most famous landmarks in the world, including the Eiffel Tower, Notre Dame, the Louvre (which houses the Mona Lisa!), and Versailles.',
     imageClass: 'travel-card__image--4',
   },
   {
     destination: 'Germany',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I definitely had my share of bratwurst, pretzels, and beer! But one of my favorite memories was visiting the castle that inspired Disney\'s Sleeping Beauty Castle, Neuschwanstein Castle.',
     imageClass: 'travel-card__image--4',
   },
   {
     destination: 'Italy',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'My favorite memories of visiting Florence were, seeing the Statue of David, seeing the Birth of Venus painting, doing a day trip in Tuscany wine country, and having a real Cappuccino!',
     imageClass: 'travel-card__image--1',
   },
   {
     destination: 'Japan',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'The most orderly country I\'ve ever visited! I visited Tokyo, Kyoto, and Osaka. My favorite thing was eating the best sushi at the most reasonable prices.',
     imageClass: 'travel-card__image--2',
   },
   {
     destination: 'Mexico',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I lived in Mexico City for a few months after completing university and have explored much of the country since then. It is like a second home.',
     imageClass: 'travel-card__image--4',
     image: mexicoFlagImage,
   },
   {
     destination: 'Norway',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I visited Bergen and Oslo. My most memorable experiences were doing a mini fjord cruise called Norway in a Nutshell, seeing the painting The Scream by Edvard Munch, visiting the hall where the Nobel Prizes are awarded, and meeting the kindest people.',
     imageClass: 'travel-card__image--3',
   },
   {
     destination: 'Portugal',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I visited Coimbra, Porto, and Lisbon. Porto was the most beautiful city I never knew I needed to see. The beautiful tile work, the colorful buildings, and the Douro River made it a magical place to visit.',
     imageClass: 'travel-card__image--2',
     image: portugalFlagImage,
   },
   {
     destination: 'South Korea',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I ate my way through Seoul, Gyeongju, and Busan. I loved the variety of delicious Korean cuisine. Busan was the most unexpected treat - an amazing city with many fun tourist attractions and the beautiful surrounding sea.',
     imageClass: 'travel-card__image--4',
     image: koreaFlagImage,
   },
   {
     destination: 'Spain',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I have been to Spain many times. Inititally to Barcelona, Tarragona, and Madrid and then later to Sevilla and many back and forth trips to Madrid. I enjoyed the Gaudí architecture, the Roman ruins, the tile work in the south, and the incredible dining and bar culture at a price that is much more reasonable for American travelers.',
     imageClass: 'travel-card__image--4',
     image: spainFlagImage,
   },
   {
     destination: 'Sweden',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'Stockholm was the first stop on my Scandanavian trip. They had the most beautiful subway station art, instagrammable libraries, and the hippest coffee shops.',
     imageClass: 'travel-card__image--4',
   },
   {
     destination: 'Thailand',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'I learned that I am a city girl! While the Thai islands are beatiful and fun, I felt most alive when I explored Bangkok.',
     imageClass: 'travel-card__image--1',
   },
   {
     destination: 'Vietnam',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    text: 'Crossing the street in Ho Chi Minh City, with the insane motorbike traffic is something I\'ll never forget! The food was also delcious and cheap for American travelers. This was the start of my guided tour of Southeast Asia.',
     imageClass: 'travel-card__image--3',
   },
 ];
@@ -250,7 +250,7 @@ function TravelPanel() {
     <>
       <h2 className="section__title">Travel Adventures</h2>
       <p className="section__subtitle">
-        The world is a book, and those who do not travel read only one page.
+        The ability to move about this earth freely, to come and go as I please, is a gift I cherish and a privilege I will not waste.
       </p>
       <div className="travel-grid">
         {TRAVEL.map((place) => (
@@ -282,7 +282,7 @@ function VolunteeringPanel() {
     <>
       <h2 className="section__title">Volunteering</h2>
       <p className="section__subtitle">
-        I love cats and care about the environment that surrounds my community. I volunteer with local organizations to help make a difference in the lives of animals and the health of our planet.
+        I am obsessed with cats and care about the ecosystem that surrounds my community. I volunteer with two local organizations to help make a difference in the things I care about.
       </p>
       <div className="volunteer-list">
         {VOLUNTEERING.map((item) => (

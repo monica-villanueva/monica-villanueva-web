@@ -168,11 +168,13 @@ const VOLUNTEERING = [
     role: 'Cat Adoption Center Volunteer',
     org: 'Smittens Rescue',
     text: 'I help care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I assist with adoptions which includes meeting potential adopters and processing adoption applications. When the adoption center coordinator is on leave, I fill in as a co-coordinator with managing the center.',
+    icon: 'cat',
   },
   {
     role: 'River Cleanup Volunteer',
     org: 'San Diego River Park Foundation',
     text: 'I join the River Rescue team who work to clean up small, remote, and complicated trash sites from the San Diego River in order to ensure a healthy ecosystem.',
+    icon: 'river',
   }
 ];
 
@@ -288,7 +290,7 @@ function VolunteeringPanel() {
         {VOLUNTEERING.map((item) => (
           <div className="volunteer-item" key={item.role}>
             <div className="volunteer-item__icon">
-              <PlaceholderSvg variant="heart" color="var(--color-accent)" />
+              <PlaceholderSvg variant={item.icon ?? 'heart'} color="var(--color-accent)" />
             </div>
             <div className="volunteer-item__info">
               <h3>{item.role}</h3>

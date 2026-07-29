@@ -53,7 +53,7 @@ export default function Home() {
               <div className="highlight__label">Years of Experience</div>
             </div>
             <div>
-              <div className="highlight__number gradient-text">17</div>
+              <div className="highlight__number gradient-text">18</div>
               <div className="highlight__label">Countries Visited</div>
             </div>
             <div>

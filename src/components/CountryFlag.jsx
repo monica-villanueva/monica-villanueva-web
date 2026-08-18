@@ -277,7 +277,7 @@ export default function CountryFlag({ country }) {
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       height="100%"
-      preserveAspectRatio="xMidYMid slice"
+      preserveAspectRatio="xMidYMid meet"
       role="img"
       aria-label={`Flag of ${country}`}
     >

@@ -70,12 +70,14 @@ const TRAVEL = [
     text: 'I learned a lot about its difficult history and the genocide under the Khmer Rouge regime, enjoyed cultural performances like Aspara dance and an acrobatic circus, and visited the ancient temple, Angkor Wat.',
     imageClass: 'travel-card__image--2',
     image: cambodiaFlagImage,
+    imageFit: 'cover',
   },
   {
     destination: 'Canada',
     text: 'I visited Vancouver in the rainy season which made it even more magical. Riding bikes around Stanley Park was my favorite memory.',
     imageClass: 'travel-card__image--4',
     image: canadaFlagImage,
+    imageFit: 'cover',
   },
   {
     destination: 'China',
@@ -122,6 +124,7 @@ const TRAVEL = [
     text: 'I lived in Mexico City for a few months after completing university and have explored much of the country since then. It is like a second home.',
     imageClass: 'travel-card__image--4',
     image: mexicoFlagImage,
+    imageFit: 'cover',
   },
   {
     destination: 'Norway',
@@ -167,7 +170,7 @@ const VOLUNTEERING = [
   {
     role: 'Cat Adoption Center Volunteer',
     org: 'Smittens Rescue',
-    text: 'I help care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I assist with adoptions which includes meeting potential adopters and processing adoption applications. When the adoption center coordinator is on leave, I fill in as a co-coordinator with managing the center.',
+    text: 'I help care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I assist with adoptions which includes meeting potential adopters and processing adoption applications. When the adoption center coordinator is on leave, I fill in as a co-manager.',
     icon: 'cat',
   },
   {
@@ -263,6 +266,7 @@ function TravelPanel() {
                   src={place.image}
                   alt={place.destination}
                   className="travel-card__photo"
+                  style={place.imageFit ? { objectFit: place.imageFit } : undefined}
                 />
               ) : (
                 <CountryFlag country={place.destination} />

@@ -90,6 +90,10 @@
     height: 180px;
   }
 
+  .hero__actions {
+    justify-content: center;
+  }
+
   .highlights {
     grid-template-columns: 1fr;
     gap: 1.5rem;

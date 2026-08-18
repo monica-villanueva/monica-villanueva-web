@@ -21,7 +21,7 @@ export default function Home() {
               into elegant solutions. Passionate about books, travel, sewing, and giving back
               to the community.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <div className="hero__actions" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/professional" className="btn btn--primary">
                 My Career
               </Link>

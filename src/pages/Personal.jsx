@@ -96,7 +96,7 @@ const TRAVEL = [
   },
   {
     destination: 'England',
-    text: 'I went to London on my first international trip and then returned years later for a road trip around the country.',
+    text: 'I went to London on my first international trip and returned on a separate occasion for a road trip around the country.',
     imageClass: 'travel-card__image--4',
   },
   {
@@ -170,8 +170,7 @@ const VOLUNTEERING = [
   {
     role: 'Cat Adoption Center Volunteer',
     org: 'Smittens Rescue',
-    text: 'I help care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I assist with adoptions which includes meeting potential adopters and processing adoption applications. When the adoption center coordinator is on leave, I fill in as a co-manager.',
-    icon: 'cat',
+    text: 'I care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I facilitate adoptions by meeting potential adopters and processing adoption applications. When a cat is sick or experiences a medical emergency, I collaborate with rescue leaders to execute an action plan.',
   },
   {
     role: 'River Cleanup Volunteer',

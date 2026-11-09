@@ -61,14 +61,31 @@
   text-align: center;
 }
 
-.highlight__number {
-  font-size: 2.5rem;
-  font-weight: 800;
+.highlight {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
 }
 
-.highlight__label {
+.highlight__icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.highlight__title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.highlight__text {
   color: var(--color-text-muted);
   font-size: 0.95rem;
+  max-width: 300px;
+  margin-inline: auto;
 }
 
 @media (max-width: 768px) {

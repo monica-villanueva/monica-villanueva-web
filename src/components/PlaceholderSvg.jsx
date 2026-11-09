@@ -82,6 +82,42 @@ const VARIANTS = {
       <circle cx="50" cy="72" r="5" fill="currentColor" opacity="0.3" />
     </>
   ),
+  prohibit: (
+    <g fill="none" stroke="currentColor" strokeWidth="9" opacity="0.35">
+      <circle cx="50" cy="50" r="35" />
+      <line x1="25.25" y1="25.25" x2="74.75" y2="74.75" />
+    </g>
+  ),
+  bulb: (
+    <>
+      <path
+        d="M39 64 C31 58 26 50 26 41 A24 24 0 0 1 74 41 C74 50 69 58 61 64 L61 70 L39 70 Z"
+        fill="currentColor"
+        fillOpacity="0.12"
+        stroke="currentColor"
+        strokeWidth="4"
+        strokeLinejoin="round"
+        opacity="0.3"
+      />
+      <polyline
+        points="43,64 43,46 47,50 50,44 53,50 57,46 57,64"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.3"
+      />
+      <rect x="38" y="74" width="24" height="5" rx="2.5" fill="currentColor" opacity="0.3" />
+      <rect x="40" y="81" width="20" height="5" rx="2.5" fill="currentColor" opacity="0.25" />
+      <rect x="45" y="88" width="10" height="4" rx="2" fill="currentColor" opacity="0.2" />
+      <line x1="50" y1="4" x2="50" y2="10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.25" />
+      <line x1="18" y1="16" x2="22" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.25" />
+      <line x1="82" y1="16" x2="78" y2="20" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.25" />
+      <line x1="8" y1="41" x2="15" y2="41" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.25" />
+      <line x1="85" y1="41" x2="92" y2="41" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.25" />
+    </>
+  ),
   goggles: (
     <>
       <path d="M10 42 Q4 24 22 16" fill="none" stroke="currentColor" strokeWidth="3" opacity="0.2" />

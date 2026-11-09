@@ -1,47 +1,33 @@
 import PlaceholderSvg from '../components/PlaceholderSvg';
-import { getYearsOfExperience } from '../utils/experience';
 import './Professional.css';
 
 const HISTORY = [
   {
-    date: '2022 - 2026',
     title: 'Lead Site Reliability Engineer',
     employer: 'Shell Recharge Solutions',
-    text: 'Made the leap to the operations side of software development, focusing on site reliability engineering, observability engineering, incident response, automation, and cloud architecture. Managed high-stress situations and lead teams to resolve critical incidents while maintaining a focus on long-term reliability and scalability.'
+    text: 'Moved to the operations side of software to keep enterprise applications healthy in AWS, supporting services on EKS, MSK, Amazon MQ, RDS, OpenSearch, and ElastiCache. Built dashboards, monitors, and alerts in Dynatrace and Datadog, managed with Terraform, so the team could spot trouble before customers did. Served as incident commander, coordinating cross-functional responders under pressure and following through with root cause analysis and postmortems. Worked with engineering and product teams to define SLIs and SLOs, and built Angular-based developer tools that reduce toil.',
   },
   {
-    date: '2020 - 2022',
     title: 'Senior Software Engineer',
     employer: 'Intelliguard',
     text: 'Applied my Angular expertise for a web application interface for an RFID-enabled medication inventory tracking system. The role evolved into a full-stack position where I was responsible for both front-end and back-end development, CI/CD upgrades, business requirements, and achieving deliverables on time.',
   },
   {
-    date: '2016 - 2020',
     title: 'Tech Lead, Manager',
     employer: 'Lightstream, a division of Truist Bank',
     text: 'Joined a team of high-performers and learned to take ownership of large projects and deliver high-quality solutions in a heavily regulated environment. I learned to balance technical leadership with people management, and I enjoyed mentoring junior developers and helping them grow in their careers.',
   },
   {
-    date: '2010 - 2015',
-    title: 'Senior Software Engineer',
+    title: 'Software Engineer III',
     employer: 'Mitchell, an Enlyte Company',
-    text: 'Continued my journey as a .NET developer learning C#, WPF, and early web tools like Backbone.js, AngularJS, and native mobile app conversions. I discovered a love for building web apps and saw how quickly the web evolves. I also realized that software development is a collaborative effort. I enjoyed being part of a team that worked together to solve complex problems and deliver innovative solutions while maintaining the integrity of our codebase.',
   },
   {
-    date: '2008 - 2010',
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer',
     employer: 'Versacall Technologies',
-    text: 'Started my career in a .NET shop building web reports for factory equipment that measured productivity. Gained hands-on experience with VB.NET, ASP.NET, and building client-facing applications that users relied on for important business decisions. I learned that my work had a direct impact on the success of our customers\'s business, and I took pride in delivering high-quality software that met the needs of our users.',
   },
 ];
 
 const EDUCATION = [
-  {
-    title: 'From DevOps to Platform Engineering: Master Backstage & IDPs',
-    source: 'Udemy',
-    year: '2026',
-    text: 'Build and deploy applications using Docker, Kubernetes, and ArgoCD, automate CI/CD pipelines with GitHub Actions, create an Internal Developer Platform (IDP) using Backstage, write Documentation as Code with Backstage TechDocs, implement Software Templates for faster application deployments, deploy Backstage in a production environment',
-  },
   {
     title: 'Intro to AI & Machine Learning',
     source: 'Grossmont College',
@@ -75,13 +61,12 @@ const EDUCATION = [
 ];
 
 const INTERESTS = [
-  { title: 'Web Development', text: 'Deep expertise in the Angular ecosystem with skills transferrable to React.', variant: 'code', color: 'var(--color-primary)' },
-  { title: 'Full Stack Development', text: 'Seeing a whole project through from frontend to backend.', variant: 'papers', color: 'var(--color-accent)' },
-  { title: 'Site Reliability', text: 'Forward vision for maintaining highly available and performant systems.', variant: 'uptime', color: 'var(--color-primary)' },
-  { title: 'Observability', text: 'Skillful in using observability tools such as Dynatrace, Datadog, and CloudWatch to gain insights into system performance.', variant: 'goggles', color: 'var(--color-accent)' },
-  { title: 'Incident Management', text: 'Satisfaction in bringing order to chaos and turning crises into opportunities for improvement.', variant: 'alert', color: 'var(--color-primary)' },
-  { title: 'Cloud Architecture', text: 'Experience using AWS with skills transferrable to Azure and GCP.', variant: 'globe', color: 'var(--color-accent)' },
-  { title: 'DevOps Lite', text: 'Ensuring my code gets from desktop to production through CI/CD pipelines, ArgoCD, GitHub Workflows, Docker, and Kubernetes.', variant: 'cycle', color: 'var(--color-primary)' },
+  { title: 'Automation & Developer Tools', text: 'Building full-stack tools, often in Angular, that smooth out workflows and take repetitive work off engineers\' plates.', variant: 'code', color: 'var(--color-primary)' },
+  { title: 'Incident Management & Leadership', text: 'Bringing order to chaos: pulling in the right people, keeping communication flowing, and driving toward resolution.', variant: 'alert', color: 'var(--color-accent)' },
+  { title: 'Observability & Monitoring', text: 'Turning metrics, logs, and traces in Dynatrace and Datadog into dashboards and alerts that surface problems early.', variant: 'goggles', color: 'var(--color-primary)' },
+  { title: 'Root Cause Analysis & Postmortems', text: 'Digging into what really happened and turning lessons learned into concrete fixes.', variant: 'papers', color: 'var(--color-accent)' },
+  { title: 'AWS Production Support', text: 'Keeping services healthy across EKS, MSK, Amazon MQ, RDS, OpenSearch, and ElastiCache, with observability managed in Terraform.', variant: 'globe', color: 'var(--color-primary)' },
+  { title: 'SLIs, SLOs & Reliability', text: 'Partnering with engineering and product to agree on what "reliable" means and measure progress toward it.', variant: 'uptime', color: 'var(--color-accent)' },
 ];
 
 export default function Professional() {
@@ -90,7 +75,7 @@ export default function Professional() {
       <header className="page-header">
         <div className="container">
           <h1 className="gradient-text">Professional</h1>
-          <p>{getYearsOfExperience()} years of building software and growing engineering teams.</p>
+          <p>Keeping production healthy, with a software engineer&apos;s mindset.</p>
         </div>
       </header>
 
@@ -98,16 +83,15 @@ export default function Professional() {
       <section className="section">
         <div className="container">
           <h2 className="section__title">History</h2>
-          <p className="section__subtitle">My professional journey through the years.</p>
+          <p className="section__subtitle">From full-stack development to Site Reliability Engineering.</p>
 
           <div className="timeline">
             {HISTORY.map((item) => (
-              <div className="timeline__item" key={item.date}>
+              <div className="timeline__item" key={item.title + item.employer}>
                 <div className="timeline__dot" />
-                <div className="timeline__date">{item.date}</div>
                 <div className="timeline__title">{item.title}</div>
                 <div className="timeline__employer">{item.employer}</div>
-                <p className="timeline__text">{item.text}</p>
+                {item.text && <p className="timeline__text">{item.text}</p>}
               </div>
             ))}
           </div>
@@ -147,9 +131,9 @@ export default function Professional() {
       {/* Interests */}
       <section className="section">
         <div className="container">
-          <h2 className="section__title">Professional Interests</h2>
+          <h2 className="section__title">What I Focus On</h2>
           <p className="section__subtitle">
-            Technologies and disciplines I&apos;m most passionate about.
+            The areas where I spend most of my energy today.
           </p>
 
           <div className="interests-grid">

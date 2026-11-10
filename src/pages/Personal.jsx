@@ -171,6 +171,7 @@ const VOLUNTEERING = [
     role: 'Cat Adoption Center Volunteer',
     org: 'Smittens Rescue',
     text: 'I care for cats and kittens by cleaning cages, allowing for playtime, observing behavior, and monitoring health. I facilitate adoptions by meeting potential adopters and processing adoption applications. When a cat is sick or experiences a medical emergency, I collaborate with rescue leaders to execute an action plan.',
+    icon: 'cat',
   },
   {
     role: 'River Cleanup Volunteer',

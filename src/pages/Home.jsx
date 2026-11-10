@@ -96,11 +96,10 @@ export default function Home() {
           </p>
           <p className="section__subtitle">
             I&apos;m at my best when things are complicated. I like bringing structure to messy
-            situations, setting priorities, getting the right people in the room, and keeping
-            everyone moving toward a result. I&apos;ve led development projects, coordinated
-            production releases, managed direct reports, and stepped in as incident commander.
-            I&apos;m curious and hands-on, and I believe reliability is a shared responsibility
-            that works best when teams solve problems together.
+            situations, setting priorities, bringing the right people together, and keeping the work moving. 
+            I&apos;ve led development projects, coordinated production releases, managed direct reports, 
+            and stepped in as incident commander. I&apos;m curious and hands-on, and I believe reliability is 
+            a shared responsibility that works best when teams solve problems together.
           </p>
           <p className="section__subtitle">
             Outside of work, I love sewing, rescuing cats, traveling, and reading fiction and
